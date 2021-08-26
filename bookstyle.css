@@ -1,0 +1,147 @@
+body {
+    min-width:1800px;
+    color: brown; 
+    margin: auto;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    background-color: gray;
+    }
+
+p {
+color: black;
+font-size: 30px;
+}
+
+h1 {
+ color: white;
+ font-size: 80px;
+}
+
+h2 {
+    color: ##FF0000;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+b {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logoimage {
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+img { 
+  border: 13px solid #ffffff; 
+  border-radius: 4px; 
+  padding: 5px; 
+
+} 
+
+/* --- Set up site grid --- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "banner banner banner logo"
+        "nav nav nav logo"
+        "main main main main"
+        "footer footer footer footer";
+    grid-gap: 4px;
+}
+
+/* --- End of grid setup --- */
+
+
+/* -000- Area styling -000- */
+
+.box {
+    border: solid 1px #000;
+    padding: 20px;
+    margin:5px;
+    
+}
+
+/* Area colouring... */
+
+}
+
+/* Set font on dark areas to white */
+.logo, .footer, .banner, .side {
+    color: #fff;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: white;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: #166088;
+    text-align: center;
+    
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+    background-color: #C0D6DF;
+    
+}
+
+.main {
+    grid-area: main;
+    background-color: #DBE9EE;
+    text-align:left;
+}
+
+.photo {
+    position: relative;
+    left: 30px;
+    margin-left: 400px;
+   
+}
+
+.photo2 {
+    position: relative;
+    float: right;
+    margin-right: 400px;
+    
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #C0D6DF;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+/* -000- End of area styling -000- */ 
+
+h1, h2, h3, h4, {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Links */
+.nav a {font-weight: bold;}
+.nav a:link, .nav a:visited {color: #696969}
+.nav a:hover {color: #FF0000; text-decoration: none;}
+
+.nav a:link{
+    background-color: ghostwhite;
+    padding: 10px 15px;
+    transition: all 0.5s ease;
+}

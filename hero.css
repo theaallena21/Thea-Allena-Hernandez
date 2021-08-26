@@ -1,0 +1,165 @@
+body {
+    min-width:850px;
+    color: brown; 
+    margin: auto;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    background-color: #C0D6DF;
+    }
+p {
+    color: black;
+font-size: 30px;
+}
+h1 {
+ color: white;
+ font-size: 65px;
+}
+h2 {
+    color: black;
+}
+h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+b {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+h4 {
+    color: white;
+}
+.sideimage {
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 70px;
+    
+}
+.side2image {
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.side3image {
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 200px;
+    margin-bottom: auto;
+}
+
+/* --- Set up site grid --- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav nav nav"
+        "banner banner banner"
+        "main main side"
+        "side2 main2 main2"
+        "footer footer footer";
+    grid-gap: 4px
+}
+
+/* --- End of grid setup --- */
+
+
+/* -000- Area styling -000- */
+
+.box {
+    border: solid 1px #000;
+    padding: 20px;
+    margin:5px;
+    
+}
+
+/* Area colouring... */
+
+}
+
+/* Set font on dark areas to white */
+.logo, .footer, .banner, .side {
+    color: #fff;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: #001d3d;
+    text-align: center;
+    
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+    background-color: #BBBBBF;
+    
+}
+
+.main {
+    grid-area: main;
+    background-color: #A3A9AA;
+    text-align:left;
+}
+
+.main2 {
+      grid-area: main2;
+    background-color: #A3A9AA;
+}
+
+.side {
+    grid-area: side;
+    background-color: #61a5c2; 
+    text-align: center;
+    
+}
+
+.side2 {
+    grid-area: side2;
+    background-color: #61a5c2;
+    text-align: center;
+}
+
+.photo {
+    float: left;
+    margin-left: 400px;
+}
+
+.photo2 {
+    float: right;
+    margin-right: 400px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color:  #003566;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+/* -000- End of area styling -000- */ 
+
+h1, h2, h3, h4, b {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Links */
+.nav a {font-weight: bold;}
+.nav a:link, .nav a:visited {color: #696969}
+.nav a:hover {color: #FF0000; text-decoration: none;}
+
+.nav a:link{
+    background-color: ghostwhite;
+    padding: 10px 25px;
+    transition: all 0.5s ease;
+}
